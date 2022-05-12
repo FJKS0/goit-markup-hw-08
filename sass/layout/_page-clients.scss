@@ -1,0 +1,61 @@
+// SECTION CLIENTS
+
+.clients-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: calc(-1 * 15px);
+}
+
+.clients-list__item {
+	flex-basis: calc((100% - 4 * 15px) / 2);
+	margin: 15px;
+
+	// tablet
+	@media screen and (min-width: $tablet) {
+		flex-basis: calc((100% - 6 * 15px) / 3);
+	}
+	// desktop
+	@media screen and (min-width: $desktop) {
+		flex-basis: calc((100% - 12 * 15px) / 6);
+	}
+}
+
+// CLIENTS-LIST LINK
+
+.clients-list__link {
+	@include centerFlex(flex, center);
+
+	border-radius: 4px;
+	border: 1px solid $icon-dark-color;
+
+	overflow: hidden;
+	outline-color: transparent;
+
+	transition-property: border-color, outline-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-color: $link-hover;
+		outline-color: $link-hover;
+	}
+}
+
+// CLIENTS-LIST LINK ICON
+
+.clients-list__icon {
+	width: 106px;
+	height: 92px;
+
+	fill: $icon-dark-color;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	.clients-list__link:hover &,
+	.clients-list__link:focus & {
+		fill: $link-hover;
+	}
+}

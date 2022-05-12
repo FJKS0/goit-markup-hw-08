@@ -1,0 +1,164 @@
+// GLOBAL RESET
+
+body {
+	box-sizing: border-box;
+
+	font-family: $primary-font;
+	font-size: 14px;
+	color: $text-light;
+
+	background-color: $bg-color;
+
+	overflow-x: hidden;
+}
+
+body.modal-open {
+	overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0px;
+	padding: 0px;
+
+	letter-spacing: 0.03em;
+}
+
+a {
+	display: inline-block;
+
+	color: inherit;
+	text-decoration: none;
+
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+address {
+	font-style: normal;
+}
+
+button {
+	display: inline-block;
+
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	margin: 0px;
+
+	box-shadow: 0px;
+	background-color: transparent;
+
+	font-family: inherit;
+
+	color: inherit;
+	fill: currentColor;
+
+	cursor: pointer;
+
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+textarea {
+	width: 100%;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
+	background-color: transparent;
+
+	font-family: inherit;
+}
+
+svg {
+	color: inherit;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+
+	list-style: none;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@media screen and (min-width: $mobile) {
+		width: 480px;
+	}
+	@media screen and (min-width: $tablet) {
+		width: 768px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 1200px;
+	}
+}
+
+.section {
+	padding: 60px 0px;
+
+	@media screen and (min-width: $desktop) {
+		padding: 94px 0;
+	}
+}
+
+// TITLE/TEXT
+
+.section__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.16;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: $title-dark;
+
+	margin-bottom: 30px;
+
+	// desktop
+	@media screen and (min-width: $desktop) {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+}
+
+.text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+
+	color: $text-light;
+}
+
+// .container {
+// 	max-width: 1200px;
+
+// 	padding: 0px 15px;
+// 	margin: 0px auto;
+// }
+
+// .section {
+// 	padding: 94px 0px;
+// }
+
+.is-hidden {
+	visibility: hidden;
+	position: absolute;
+	top: -100%;
+
+	pointer-events: none;
+}

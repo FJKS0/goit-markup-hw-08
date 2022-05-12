@@ -1,0 +1,24 @@
+// UTILS
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/global';
+@import './utils/mixin';
+
+// COMPONENTS
+@import './components/menu-button';
+@import './components/buttons';
+@import './components/logo';
+@import './components/socials';
+
+// LAYOUT
+
+@import './layout/page-header';
+@import './layout/page-hero';
+@import './layout/page-features';
+@import './layout/page-about';
+@import './layout/page-team';
+@import './layout/page-clients';
+@import './layout/page-footer';
+
+@import './layout/page-modal';
+@import './layout/page-portfolio';

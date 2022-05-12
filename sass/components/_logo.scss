@@ -1,0 +1,48 @@
+// LOGO
+
+.logo {
+	font-family: $secondary-font;
+	font-size: 24px;
+	font-weight: $secondary-700;
+	line-height: 1.16;
+
+	color: $logo-dark-color;
+	outline-color: transparent;
+
+	transition-property: outline-color;
+
+	&:focus {
+		outline-color: $logo-accent-color;
+	}
+	&--accent {
+		color: $link-hover;
+	}
+}
+
+// HEADER LOGO
+
+.header__logo {
+	padding: 16px 0px;
+	outline-color: transparent;
+
+	@media screen and (min-width: $tablet) {
+		font-size: 26px;
+
+		padding: 26px 0px;
+		margin-right: 88px;
+	}
+	@media screen and (min-width: $desktop) {
+		font-size: 26px;
+		line-height: 1.15;
+
+		padding: 24px 0px;
+		margin-right: 93px;
+	}
+}
+
+// FOOTER LOGO
+
+.footer__logo {
+	margin-bottom: 20px;
+	color: $logo-light-color;
+}

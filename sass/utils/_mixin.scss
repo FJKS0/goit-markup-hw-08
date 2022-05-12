@@ -1,0 +1,7 @@
+// FLEX
+
+@mixin centerFlex($type, $justify) {
+	display: $type;
+	justify-content: $justify;
+	align-items: center;
+}

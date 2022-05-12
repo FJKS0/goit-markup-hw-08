@@ -1,0 +1,144 @@
+// FOOTER
+
+.footer {
+	padding: 60px 0px;
+	background-color: $footer-color;
+
+	text-align: center;
+
+	// desktop
+	@media screen and (min-width: $desktop) {
+		text-align: start;
+	}
+}
+
+// FOOTER TITLE
+
+.footer__title {
+	display: block;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	color: $title-light;
+	text-transform: uppercase;
+
+	margin-bottom: 20px;
+}
+
+// FOOTER-META
+
+.footer-meta {
+	// tablet
+	@media screen and (min-width: $tablet) and (max-width: 1199px) {
+		padding: 0px 70px;
+	}
+	// desktop
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		align-items: baseline;
+	}
+
+	&__top {
+		// tablet
+		@media screen and (min-width: $tablet) {
+			@include centerFlex(flex, space-between);
+			align-items: baseline;
+		}
+		// desktop
+		@media screen and (min-width: $desktop) {
+			align-items: baseline;
+			margin-right: 93px;
+		}
+	}
+}
+
+// FOOTER-CONTACTS
+
+.footer-contacts {
+	margin-bottom: 60px;
+
+	// desktop
+	@media screen and (min-width: $desktop) {
+		margin-right: 70px;
+		margin-bottom: 0px;
+	}
+}
+
+// FOOTER-CONTACTS ADDRESS
+
+.address-list__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.address__text {
+	color: $title-light;
+}
+
+// FOOTER-CONTACTS ADDRESS LINK
+
+.address-list__link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	color: $text-opacity;
+}
+
+// FOOTER-SOCIAL
+
+.footer-social {
+	margin-bottom: 60px;
+}
+
+// FOOTER-FORM
+
+.footer-form {
+	flex-grow: 1;
+}
+
+.form-group {
+	@media screen and (min-width: $desktop) {
+		display: flex;
+	}
+}
+
+// FOOTER-FORM INPUT
+
+.form-group__input {
+	max-width: 450px;
+	height: 50px;
+	padding: 15px 16px;
+
+	margin-bottom: 20px;
+
+	border-color: $input-border-color;
+	box-shadow: $button-dark-shadow;
+
+	color: $text-light;
+
+	@media screen and (min-width: $desktop) {
+		margin-right: 12px;
+		margin-bottom: 0px;
+	}
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+
+		color: $input-placeholder-color;
+	}
+}
+
+// FOOTER-FORM BUTTOn
+
+.form-group__button {
+	@include centerFlex(flex, center);
+	margin: 0px auto;
+}
+
+.form-group__icon {
+	margin-left: 10px;
+}

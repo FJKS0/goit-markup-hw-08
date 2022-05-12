@@ -1,0 +1,51 @@
+// SECTION TEAM
+
+.team {
+	background-color: $team-bg-color;
+}
+
+.team-list {
+	// tablet and desktop
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: calc(-1 * 15px);
+	}
+}
+
+.team-list__item {
+	border-radius: 0px 0px 4px 4px;
+	background-color: $bg-color;
+	box-shadow: $team-bg-shadow;
+
+	margin-bottom: 30px;
+
+	// tablet and desktop
+	@media screen and (min-width: $tablet) {
+		margin: 15px;
+	}
+}
+
+// TEAM-LIST META
+
+.team-list__meta {
+	padding: 30px 32px;
+}
+
+.team-list__top {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+// TEAM-LIST META TITLE
+
+.team-list__title {
+	font-weight: $primary-500;
+	font-size: 16px;
+	line-height: 1.18;
+	letter-spacing: 0.03em;
+	color: $title-dark;
+
+	margin-bottom: 10px;
+}

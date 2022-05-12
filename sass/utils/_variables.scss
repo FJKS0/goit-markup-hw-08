@@ -1,0 +1,109 @@
+// FONTS
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+
+$primary-400: 400;
+$primary-500: 500;
+$primary-700: 700;
+$primary-900: 900;
+
+$secondary-700: 700;
+
+// TEXT
+
+$title-dark: #212121;
+$title-light: #ffffff;
+
+$text-light: #757575;
+$text-opacity: rgba(255, 255, 255, 0.6);
+$text-white: #ffffff;
+
+// LINK
+
+$link-dark-color: #212121;
+$link-light-color: #757575;
+$link-opacity-color: rgba(255, 255, 255, 0.6);
+
+$link-hover: #188ce8;
+$link-border: rgba(33, 33, 33, 0.2);
+
+// BUTTON
+
+$button-dark-bgcolor: #2196f3;
+$button-light-bgcolor: #f5f4fa;
+
+$button-dark-textcolor: #ffffff;
+$button-light-textcolor: #212121;
+
+$button-dark-hover: #188ce8;
+$button-light-hover: #2196f3;
+
+$button-dark-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$button-light-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+	0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+// ICON
+
+$icon-black-fill: #212121;
+$icon-dark-color: #afb1b8;
+$icon-light-color: #ffffff;
+
+$icon-hover: #ffffff;
+
+$icon-dark-bgcolor: rgba(255, 255, 255, 0.1);
+$icon-light-bgcolor: #ffffff;
+$icon-bg-hover: #2196f3;
+
+// INPUT
+
+$input-border-color: rgba(255, 255, 255, 0.3);
+$input-placeholder-color: rgba(117, 117, 117, 0.5);
+
+// SECTION
+
+$bg-color: #ffffff;
+$footer-color: #2f303a;
+
+$header-border-color: #ececec;
+
+$hero-bg-color: #2f303a;
+$hero-ovelray-color: rgba(47, 48, 58, 0.4);
+
+$features-bg-color: #f5f4fa;
+$team-bg-color: #f5f4fa;
+$team-bg-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+	0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$about-bg-color: rgba(47, 48, 58, 0.8);
+
+// LOGO
+
+$logo-dark-color: #000000;
+$logo-light-color: #ffffff;
+$logo-accent-color: #2196f3;
+
+// PROJECT-CARD
+
+$project-card-overlay: rgba(33, 150, 243, 0.9);
+$project-card-border: #eeeeee;
+$project-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+	0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+// MODAL WINDOW
+
+$modal-overlay-color: rgba(0, 0, 0, 0.2);
+$modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+	0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$modal-close: #000000;
+$modal-close-hover: #2196f3;
+$modal-close-border: rgba(0, 0, 0, 0.1);
+
+// MODAL INPUT
+
+$modal-input-border: rgba(33, 33, 33, 0.2);
+$modal-input-border-hover: #2196f3;
+
+$modal-input-icon: #212121;
+$modal-input-text: rgba(117, 117, 117, 0.5);
+$modal-input-link: #2196f3;

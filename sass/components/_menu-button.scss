@@ -1,0 +1,45 @@
+.menu-button {
+	@include centerFlex(flex, center);
+
+	position: absolute;
+	right: 15px;
+
+	background-color: transparent;
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}
+
+// ICON-MENU
+.menu-button.is-open {
+	position: fixed;
+	z-index: 15;
+	right: 15px;
+
+	display: block;
+}
+
+.menu-button {
+	fill: $icon-black-fill;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		fill: $link-hover;
+	}
+}
+
+.menu-button .icon-cross {
+	display: none;
+}
+
+.menu-button.is-open .icon-cross {
+	display: block;
+}
+.menu-button.is-open .icon-menu {
+	display: none;
+}
