@@ -33,6 +33,8 @@
 	padding: 40px;
 	opacity: 1;
 
+	width: calc(100% - 30px);
+
 	background-color: $bg-color;
 	box-shadow: $modal-shadow;
 
