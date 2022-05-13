@@ -13,7 +13,7 @@ body {
 }
 
 body.modal-open {
-	overflow: hidden;
+	overflow: auto;
 }
 
 p,
@@ -94,8 +94,9 @@ ul {
 }
 
 .container {
+	width: 100%;
+	padding: 0px 15px;
 	margin: 0 auto;
-	padding: 0 15px;
 
 	@media screen and (min-width: $mobile) {
 		width: 480px;
