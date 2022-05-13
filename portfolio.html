@@ -50,19 +50,19 @@
 					</svg>
 				</button>
 
-				<div class="menu-container menu-nav-container" data-menu>
+				<div class="menu-container" data-menu>
 					<nav class="main-nav">
 						<ul class="main-nav__list">
 							<li class="main-nav__item">
-								<a class="main-nav__link" href="./index.html"> Студия </a>
-							</li>
-							<li class="main-nav__item">
 								<a
 									class="main-nav__link main-nav__link--current"
-									href="./portfolio.html"
+									href="./index.html"
 								>
-									Портфолио
+									Студия
 								</a>
+							</li>
+							<li class="main-nav__item">
+								<a class="main-nav__link" href="./portfolio.html">Портфолио</a>
 							</li>
 							<li class="main-nav__item">
 								<a class="main-nav__link" href="#">Контакты</a>
@@ -70,7 +70,16 @@
 						</ul>
 					</nav>
 
-					<ul class="main-contacts">
+					<ul class="main-contacts main-contacts__list">
+						<li class="main-contacts__item">
+							<a class="main-contacts__link" href="mailto:info@devstudio.com">
+								<svg class="main-contacts__icon" width="15" height="15">
+									<use href="./images/icons.svg#icon-envelope"></use>
+								</svg>
+								info@devstudio.com
+							</a>
+						</li>
+
 						<li class="main-contacts__item">
 							<a
 								class="main-contacts__link main-contacts__link--current"
@@ -82,26 +91,21 @@
 								+38 096 111 11 11
 							</a>
 						</li>
-						<li class="main-contacts__item">
-							<a class="main-contacts__link" href="mailto:info@devstudio.com">
-								<svg class="main-contacts__icon" width="15" height="15">
-									<use href="./images/icons.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
 					</ul>
 
 					<ul class="main-socials">
 						<li class="main-socials__item">
 							<a class="main-socials__link" href="#">Instagram</a>
 						</li>
+
 						<li class="main-socials__item">
 							<a class="main-socials__link" href="#">Twitter</a>
 						</li>
+
 						<li class="main-socials__item">
 							<a class="main-socials__link" href="#">Facebook</a>
 						</li>
+
 						<li class="main-socials__item">
 							<a class="main-socials__link" href="#">LinkedIn</a>
 						</li>

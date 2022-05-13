@@ -392,6 +392,12 @@ ul {
 @media screen and (min-width: 768px) {
   .header-nav {
     min-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    min-height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -557,11 +563,6 @@ ul {
 @media screen and (max-width: 767px) {
   .main-contacts {
     margin-bottom: 64px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -572,40 +573,33 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  .main-contacts .main-contacts__item:last-child {
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
     margin-left: auto;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-contacts__item:first-child {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .main-contacts__item:last-child {
+  .main-contacts__item:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-right: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main-contacts__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main-contacts__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main-contacts__item:not(:first-child) {
-    margin-bottom: 10px;
   }
 }
 
@@ -728,8 +722,8 @@ ul {
   padding: 118px 0px;
   margin: 0px auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mobile/hero-img-mobile.jpg);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero-img-mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../../images/mobile/hero-img-mobile.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/mobile/hero-img-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2f303a;
@@ -743,7 +737,7 @@ ul {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url(../../images/mobile/hero-img-mobile@2x.jpg);
+    background-image: url(../../../images/mobile/hero-img-mobile@2x.jpg);
   }
 }
 
