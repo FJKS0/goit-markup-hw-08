@@ -370,10 +370,8 @@ ul {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -1514,6 +1512,9 @@ ul {
 
 @media screen and (min-width: 768px) {
   .portfolio-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
   }
 }
